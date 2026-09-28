@@ -7,7 +7,7 @@ export function SectionHeading({
 }) {
   return (
     <h2
-      className={`mb-3 text-xs font-bold uppercase tracking-widest ${
+      className={`mb-3 text-xs font-bold uppercase tracking-widest print:break-after-avoid ${
         variant === "inverted" ? "text-white" : "text-primary"
       }`}
     >

@@ -8,7 +8,7 @@ export function Education() {
 
       <div className="flex flex-col gap-3">
         {educationData.map((entry) => (
-          <div key={entry.degree}>
+          <div key={entry.degree} className="print:break-inside-avoid">
             <div className="flex flex-wrap items-baseline justify-between gap-x-3">
               <h3 className="text-sm font-semibold text-zinc-900">
                 {entry.degree}

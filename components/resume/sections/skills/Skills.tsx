@@ -8,7 +8,7 @@ export function Skills() {
 
       <div className="flex flex-col gap-3">
         {skillsData.map((group) => (
-          <div key={group.category}>
+          <div key={group.category} className="print:break-inside-avoid">
             <h3 className="text-xs font-semibold text-white/90">
               {group.category}
             </h3>

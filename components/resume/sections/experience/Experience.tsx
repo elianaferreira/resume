@@ -8,7 +8,7 @@ export function Experience() {
 
       <div className="flex flex-col gap-6">
         {experienceData.map((company) => (
-          <div key={company.company}>
+          <div key={company.company} className="print:break-inside-avoid">
             <div className="flex flex-wrap items-baseline justify-between gap-x-3">
               <h3 className="text-m font-bold text-zinc-900">
                 {company.company}
@@ -20,7 +20,7 @@ export function Experience() {
 
             <div className="mt-2 flex flex-col gap-4">
               {company.roles.map((role) => (
-                <div key={role.title}>
+                <div key={role.title} className="print:break-inside-avoid">
                   <div className="flex flex-wrap items-baseline justify-between gap-x-3">
                     <h4 className="text-sm font-bold text-zinc-800">
                       {role.title}
@@ -29,7 +29,10 @@ export function Experience() {
 
                   <div className="mt-2 flex flex-col gap-3">
                     {role.projects.map((project) => (
-                      <div key={project.name}>
+                      <div
+                        key={project.name}
+                        className="print:break-inside-avoid"
+                      >
                         <h5 className="text-sm font-semibold text-zinc-600">
                           {project.name}
                         </h5>

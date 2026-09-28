@@ -8,7 +8,7 @@ export function Certifications() {
 
       <div className="flex flex-col gap-3">
         {certificationsData.map((cert) => (
-          <div key={cert.name}>
+          <div key={cert.name} className="print:break-inside-avoid">
             <h3 className="text-sm font-semibold text-white/90">
               {cert.name}
             </h3>
