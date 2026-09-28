@@ -1,3 +1,4 @@
+import { CopyableEmail } from "./CopyableEmail";
 import { headerData } from "./data";
 
 export function Header() {
@@ -12,7 +13,7 @@ export function Header() {
       <p className="mt-1 text-lg text-zinc-700 print:text-base">{title}</p>
 
       <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm text-zinc-600">
-        <span>{email}</span>
+        <CopyableEmail email={email} />
         <a
           href={linkedinUrl}
           className="text-primary underline-offset-2 hover:underline"
