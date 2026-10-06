@@ -106,4 +106,22 @@ export const experienceData: ExperienceData = [
       },
     ],
   },
+  {
+    company: "Facultad Politécnica - UNA",
+    startDate: "02/2013",
+    endDate: "06/2014",
+    roles: [
+      {
+        title: "Android Developer",
+        projects: [
+          {
+            name: "Native Application to handle work orders",
+            responsibilities: [
+              "Developed a new Android application for the management of work orders for a Government company.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
