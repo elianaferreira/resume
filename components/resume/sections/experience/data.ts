@@ -3,7 +3,7 @@ import type { ExperienceData } from "./types";
 export const experienceData: ExperienceData = [
   {
     company: "Willdom",
-    startDate: "09/2023",
+    startDate: "09/2017",
     endDate: "Present",
     roles: [
       {
