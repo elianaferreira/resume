@@ -8,7 +8,12 @@ import { Languages } from "./sections/languages/Languages";
 
 export function Resume() {
   return (
-    <div className="resume-page mx-auto flex w-[8.5in] min-h-[11in] flex-col bg-white text-zinc-900 shadow-lg print:w-auto print:min-h-0 print:shadow-none">
+    <div className="resume-page mx-auto flex w-[8.5in] min-h-[11in] flex-col bg-white text-zinc-900 shadow-lg print:w-auto print:min-h-0 print:shadow-none print:bg-transparent">
+      <div
+        aria-hidden
+        className="fixed inset-y-0 left-0 -z-10 hidden w-[2.75in] bg-primary print:block"
+      />
+
       <Header />
 
       <div className="flex flex-1">
