@@ -14,6 +14,7 @@ export function Resume() {
       <div className="flex flex-1">
         <aside className="flex w-[2.75in] flex-col gap-8 bg-primary px-6 py-8 print:box-decoration-clone print:px-5 print:py-5">
           <Skills />
+          <Education />
           <Certifications />
           <Languages />
         </aside>
@@ -21,7 +22,6 @@ export function Resume() {
         <main className="flex flex-1 flex-col gap-8 px-8 py-8 print:box-decoration-clone print:px-6 print:py-5">
           <Summary />
           <Experience />
-          <Education />
         </main>
       </div>
     </div>

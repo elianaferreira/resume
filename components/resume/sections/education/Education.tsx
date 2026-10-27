@@ -4,20 +4,18 @@ import { educationData } from "./data";
 export function Education() {
   return (
     <section>
-      <SectionHeading>Education</SectionHeading>
+      <SectionHeading variant="inverted">Education</SectionHeading>
 
       <div className="flex flex-col gap-3">
         {educationData.map((entry) => (
           <div key={entry.degree} className="print:break-inside-avoid">
-            <div className="flex flex-wrap items-baseline justify-between gap-x-3">
-              <h3 className="text-sm font-semibold text-zinc-900">
-                {entry.degree}
-              </h3>
-              <span className="text-xs text-zinc-500">{entry.year}</span>
-            </div>
-            <p className="text-xs text-zinc-500">
+            <h3 className="text-sm font-semibold text-white/90">
+              {entry.degree}
+            </h3>
+            <p className="text-xs text-white/70">
               {entry.university} &middot; {entry.college}
             </p>
+            <p className="text-xs text-white/60">{entry.year}</p>
           </div>
         ))}
       </div>
