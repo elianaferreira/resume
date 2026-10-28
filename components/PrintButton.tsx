@@ -5,7 +5,7 @@ export function PrintButton() {
     <button
       type="button"
       onClick={() => window.print()}
-      className="fixed top-6 right-6 z-10 flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-md transition-colors hover:bg-primary/90 print:hidden"
+      className="fixed top-6 right-6 z-10 hidden items-center gap-2 md:flex rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-md transition-colors hover:bg-primary/90 print:hidden"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

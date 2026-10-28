@@ -6,8 +6,8 @@ export function Header() {
     headerData;
 
   return (
-    <header className="border-b-2 border-primary bg-white px-10 py-8 print:px-8 print:py-6">
-      <h1 className="text-3xl font-bold tracking-tight text-primary print:text-2xl">
+    <header className="border-b-2 border-primary bg-white px-6 py-6 md:px-10 md:py-8 print:px-8 print:py-6">
+      <h1 className="text-2xl font-bold md:text-3xl tracking-tight text-primary print:text-2xl">
         {name}
       </h1>
       <p className="mt-1 text-lg text-zinc-700 print:text-base">{title}</p>

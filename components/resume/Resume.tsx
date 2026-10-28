@@ -8,7 +8,7 @@ import { Languages } from "./sections/languages/Languages";
 
 export function Resume() {
   return (
-    <div className="resume-page mx-auto flex w-[8.5in] min-h-[11in] flex-col bg-white text-zinc-900 shadow-lg print:w-auto print:min-h-0 print:shadow-none print:bg-transparent">
+    <div className="resume-page mx-auto flex w-full min-h-screen md:w-[8.5in] md:min-h-[11in] flex-col bg-white text-zinc-900 shadow-lg print:w-auto print:min-h-0 print:shadow-none print:bg-transparent">
       <div
         aria-hidden
         className="fixed inset-y-0 left-0 -z-10 hidden w-[2.75in] bg-primary print:block"
@@ -16,15 +16,15 @@ export function Resume() {
 
       <Header />
 
-      <div className="flex flex-1">
-        <aside className="flex w-[2.75in] flex-col gap-8 bg-primary px-6 py-8 print:box-decoration-clone print:px-5 print:py-5">
+      <div className="flex flex-1 flex-col-reverse md:flex-row print:flex-row">
+        <aside className="flex w-full flex-col gap-8 bg-primary px-6 py-8 md:w-[2.75in] print:w-[2.75in] print:box-decoration-clone print:px-5 print:py-5">
           <Skills />
           <Education />
           <Certifications />
           <Languages />
         </aside>
 
-        <main className="flex flex-1 flex-col gap-8 px-8 py-8 print:box-decoration-clone print:px-6 print:py-5">
+        <main className="flex min-w-0 flex-1 flex-col gap-8 px-6 py-8 md:px-8 print:box-decoration-clone print:px-6 print:py-5">
           <Summary />
           <Experience />
         </main>
